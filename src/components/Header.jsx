@@ -89,8 +89,10 @@ const Header = () => {
   };
 
   const currentUrl = window.location.href;
-  const {pathName} = useLocation();
-  const pageName = pathName?.split("/").filter(Boolean)?.[0];
+
+  const pathName = window.location.href;
+  const pathArr = pathName.split("/");
+  const pageName = pathArr[3];
 
   
   return (
