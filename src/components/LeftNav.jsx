@@ -14,7 +14,13 @@ const LeftNav = () => {
   const clickHandler = (name,type) => {
     switch (type) {
       case "category":
-        return setSelectCategories(name);
+        if(name=="Anime"){
+          return setSelectCategories("Anime 4k opening");
+        }
+        else{
+          return setSelectCategories(name);
+        }
+        
       case "home":
         return setSelectCategories(name);
       case "menu":
@@ -48,6 +54,8 @@ const LeftNav = () => {
         })}
         <hr className="my-5 border-white/[0.2]"/>
         <div className="text-white/[0.5] text-[12px]">
+          Contact: 8698279589<br></br>
+          Email:rodriguezbrian814@gmail.com <br></br>
           Viewtube by: Bryan & Team
         </div>
       </div>

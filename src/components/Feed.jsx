@@ -2,8 +2,11 @@ import React, {useContext, useEffect} from 'react';
 import { Context } from '../context/contextApi';
 import LeftNav from "../components/LeftNav";
 import VideoCard from "./VideoCard";
+import { useNavigate } from 'react-router-dom';
 
 const Feed = () => {
+  //const navigate = useNavigate();
+ // navigate("/");
   const{loading, searchResults} = useContext(Context);
 
   useEffect(() => {

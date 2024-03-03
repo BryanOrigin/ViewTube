@@ -15,6 +15,8 @@ const App = () => {
           <Header/>
           <Routes>
               <Route path="/" exact element={<Feed/>}/>
+              <Route path="/video/" exact element={<Feed/>}/>
+              <Route path="/searchResult/" exact element={<Feed/>}/>
               <Route path="/searchResult/:searchQuery" element={<SearchResult/>}/>
               <Route path="/video/:id" element={<VideoDetails/>}/>
           </Routes>

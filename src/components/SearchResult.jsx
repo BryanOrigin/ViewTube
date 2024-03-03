@@ -24,6 +24,10 @@ const SearchResult = () => {
       console.log(res);
       setResult(res?.contents);
       setLoading(false);
+      
+      if(res?.contents.length === 0){
+        alert("No result for your query")
+      }
     })
   }
 

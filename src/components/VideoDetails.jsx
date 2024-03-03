@@ -47,7 +47,7 @@ const VideoDetails = () => {
     
 
   return (
-    <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-black">
+    <div className="flex justify-center flex-row h-[calc(100%-56px)] bg-black " >
       <div className="w-full max-w-[1280px] flex flex-col lg:flex-row">
         <div className="flex flex-col lg:w-[calc(100%-350px)] xl:w-[calc(100%-400px)] px-4 py-3 lg:py-6 overflow-y-auto">
           <div className="h-[200px] md:h-[400px] lg:h-[400px] xl:h-[550px] ml-[-16px] lg:ml-0 mr-[-16px] lg:mr-0">
